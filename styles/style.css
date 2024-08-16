@@ -1,19 +1,37 @@
+nav > ul {
+    display: flex;
+}
 nav > ul > li {
     display: inline;
     margin-right: 16px;
 }
 
-nav li > a {
-    text-decoration: none;
+nav li {
     list-style-type: none;
+}
+nav li a {
+    text-decoration: none;
     padding: 10px 20px;
 }
 nav li > a:hover {
-    background: #222;
+    background-color: aqua;
     color: #fff;
 }
 
 footer {
     text-align: center;
     margin-top: 40px;
+}
+
+/* Nested Menu Style */
+
+nav li .dropdown li {
+    margin-top: 8px;
+}
+nav li .dropdown {
+    display: none;
+    background-color: aqua;
+}
+nav li:hover .dropdown {
+    display: block;
 }
